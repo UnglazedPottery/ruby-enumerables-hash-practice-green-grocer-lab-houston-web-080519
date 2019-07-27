@@ -47,7 +47,8 @@ def checkout(cart, coupons)
   consol = consolidate_cart(cart)
   coupond = apply_coupons(consol, coupons)
   cleard = apply_clearance(coupond)
+  total = 0
   cleard.keys.each do |item|
-    
+    total = total + cleard[item][:price]
   end
 end

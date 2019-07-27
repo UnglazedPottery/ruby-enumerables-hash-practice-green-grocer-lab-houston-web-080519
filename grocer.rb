@@ -52,5 +52,7 @@ def checkout(cart, coupons)
     total += (cleard[item][:price] + cleard[item][:count])
   end
   
-  if total 
+  if total > 100
+    
+  end
 end

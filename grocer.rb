@@ -54,5 +54,7 @@ def checkout(cart, coupons)
   
   if total > 100
     total * 0.9
+  else
+    total
   end
 end

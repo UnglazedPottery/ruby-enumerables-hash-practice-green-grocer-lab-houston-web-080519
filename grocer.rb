@@ -51,4 +51,6 @@ def checkout(cart, coupons)
   cleard.keys.each do |item|
     total += (cleard[item][:price] + cleard[item][:count])
   end
+  
+  if total 
 end
